@@ -16,3 +16,5 @@ const Product = ({img, link}) => {
 }
 
 export default Product
+
+// minuto 49
