@@ -55,7 +55,7 @@ form{
 }
 input{
     width: 50%;
-    height: 50px;
+    height: 35px;
     border: none;
     border-bottom: 1px solid black;
     margin: 10px 0px;
@@ -71,10 +71,42 @@ textarea{
 
 button{
     border: none;
-    padding: 15px;
+    padding: 10px;
     background-color: rgb(22, 22, 189);
     color: white;
     font-weight: 500;
     cursor: pointer;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 480px){
+    .c-wrapper{
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+    .c-title{
+        font-size: 30px;
+    }
+    .c-info-item{
+        margin: 20px 0px;
+        width: 100%;
+        
+    }
+    .c-desc{
+        display: none;
+    }
+    .form{
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input{
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+    }
+    .button{
+        margin-top: 5px;
+    }
 }
