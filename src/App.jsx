@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import About from "./components/about/About";
+import CarruselReact from "./components/carrusel/CarruselReact";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
-import ProductList from "./components/productList/ProductList";
+
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
 
@@ -14,8 +15,9 @@ const App = () => {
     <div style={{backgroundColor: darkMode ? "#222" : "white",color: darkMode && "white"}}>
        <Toggle/>
        <Intro/>
+       <CarruselReact/>
        <About/>
-       <ProductList/>
+       
        <Contact/>
     </div>
   );

@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="c-bg"></div>
         <div className="c-wrapper">
             <div className="c-left">
-                <h1 className="c-title">Lets discuss</h1>
+                <h1 className="c-title">Contacto</h1>
                 <div className="c-info">
                     <div className="c-info-item">
                         <img src={Phone} alt="" className="c-icon"/>
@@ -48,14 +48,14 @@ const Contact = () => {
             </div>
             <div className="c-right">
                 <p className="c-desc">
-                    <b>whats up ?</b> Get in touch.
+                    <b>Queres mas detalles? Contactame.</b> 
                 </p>
                 <form ref={formRef} onSubmit={handleSubmit}>
-                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name"/>
-                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject"/>
+                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Nombre" name="user_name"/>
+                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Asunto" name="user_subject"/>
                     <input style={{backgroundColor: darkMode && "#333"}} type="email" placeholder="Email" name="user_email"/>
-                    <textarea style={{backgroundColor: darkMode && "#333"}} row="5" placeholder="Message" name="message"/>
-                    <button>Submit</button>
+                    <textarea style={{backgroundColor: darkMode && "#333"}} row="5" placeholder="Mensaje" name="message"/>
+                    <button>Enviar</button>
                     {done && " Mensaje enviado"}    
                 </form>
             </div>
